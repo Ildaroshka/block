@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/style.css" />
+<title>Главная</title>
+</head>
+<body>
+<header class="header" id="header">
+  <div class="container">
+
+    <div class="header-top">
+        <div class="logo">
+            <img src="./img/logo.svg" alt="">
+        </div>
+
+        <div class="header-actions">
+            <div class="search">
+                <span class="search-btn">🔍</span>
+                <input type="text" placeholder="Поиск">
+            </div>
+
+            <button class="burger" id="burger">
+                <span></span>
+            </button>
+        </div>
+    </div>
+    <div class="nav-menu  header-bottom">
+                    <a class="nav-chip">Рубрика</a>
+                    <a class="nav-chip">Рубрика</a>
+                    <a class="nav-chip">Рубрика</a>
+                    <a class="nav-chip" href="./about.html">О нас</a>
+    </div>
+
+
+    <nav class="nav">
+        <div class="nav-header">
+            <img src="./img/logo.svg" alt="Лого">
+        </div>
+
+        <div class="nav-inner">
+            <div class="nav-search">
+                <input type="text" placeholder="Поиск по сайту">
+            </div>
+
+            <div class="nav-menu">
+                <a class="nav-chip">Рубрика</a>
+                <a class="nav-chip">Рубрика</a>
+                <a class="nav-chip">Рубрика</a>
+                <a class="nav-chip" href="./about.html">О нас</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+  </div>
+</header>
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<main class="container">
+    <section class="main-block">
+
+        <!-- Главная статья -->
+        <article class="article-card article-main">
+            <a href="#" class="article-link">
+                <div class="article-image">
+                    <img src="./img/main.png" alt="">
+                    <div class="article-overlay">
+                        <h1>Главная статья</h1>
+                        <p>Короткое описание или лид статьи</p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <!-- Новости -->
+        <div class="news-list">
+
+            <article class="news-item">
+                <a href="#">
+                    <div class="news-meta">
+                        <span class="news-category">Новости</span>
+                        <span class="news-date">12.02.2026</span>
+                    </div>
+                    <h2>Новость 1</h2>
+                    <p>Короткое описание новости</p>
+                </a>
+            </article>
+
+
+            <article class="news-item">
+                <a href="#">
+                    <div class="news-meta">
+                        <span class="news-category">Новости</span>
+                        <span class="news-date">12.02.2026</span>
+                    </div>
+                    <h2>Новость 2</h2>
+                    <p>Короткое описание новости</p>
+                </a>
+            </article>
+
+            <article class="news-item">
+                <a href="#">
+                    <div class="news-meta">
+                        <span class="news-category">Новости</span>
+                        <span class="news-date">12.02.2026</span>
+                    </div>
+                    <h2>Новость 3</h2>
+                    <p>Короткое описание новости</p>
+                </a>
+            </article>
+            <a href="#" class="all-news-btn">Все новости →</a>
+
+        </div>
+
+
+    </section>
+
+    <section class="page-content container">
+        <div class="layout-grid">
+             <div class="layout-main">
+                <section class="categories">
+                    <h2 class="section-title">Рубрики</h2>
+
+                    <div class="categories-grid">
+
+                        <!-- Левая колонка -->
+                        <div class="categories-list">
+
+                            <article class="category-card">
+                                <div class="category-content">
+                                    <span class="category-tag">Бизнес</span>
+                                    <h3>Финансовая грамотность для школьников</h3>
+                                    <p>Как научить ребёнка управлять деньгами с раннего возраста.</p>
+                                </div>
+                                <div class="category-image">
+                                    <img src="./img/main.png" alt="">
+                                </div>
+                            </article>
+
+                            <article class="category-card">
+                                <div class="category-content">
+                                    <span class="category-tag">Технологии</span>
+                                    <h3>ИИ в образовании</h3>
+                                    <p>Как нейросети меняют процесс обучения.</p>
+                                </div>
+                                <div class="category-image">
+                                    <img src="./img/main.png" alt="">
+                                </div>
+                            </article>
+
+                            <article class="category-card">
+                                <div class="category-content">
+                                    <span class="category-tag">Аналитика</span>
+                                    <h3>Будущее цифровых медиа</h3>
+                                    <p>Тренды, которые определят рынок в 2026 году.</p>
+                                </div>
+                                <div class="category-image">
+                                    <img src="./img/main.png" alt="">
+                                </div>
+                            </article>
+
+                        </div>
+
+                </section>
+                <section class="category-articles">
+
+                    <div class="section-header">
+                        <h2>Бизнес</h2>
+                        <a href="#" class="section-link">Все статьи →</a>
+                    </div>
+
+                    <div class="articles-grid">
+
+                        <article class="article-card-clean">
+                            <div class="article-content">
+                                <span class="article-date">12.02.2026</span>
+                                <h3>Как инвестировать школьнику</h3>
+                                <p>Простые способы начать разбираться в инвестициях с раннего возраста.</p>
+                            </div>
+                            <div class="article-image-clean">
+                                <img src="./img/main.png" alt="">
+                            </div>
+                        </article>
+
+                        <article class="article-card-clean">
+                            <div class="article-content">
+                                <span class="article-date">10.02.2026</span>
+                                <h3>Основы бюджета</h3>
+                                <p>Как правильно планировать личные финансы.</p>
+                            </div>
+                            <div class="article-image-clean">
+                                <img src="./img/main.png" alt="">
+                            </div>
+                        </article>
+
+                        <article class="article-card-clean">
+                            <div class="article-content">
+                                <span class="article-date">05.02.2026</span>
+                                <h3>Карманные деньги: давать или нет?</h3>
+                                <p>Разбираем плюсы и минусы финансовой самостоятельности.</p>
+                            </div>
+                            <div class="article-image-clean">
+                                <img src="./img/main.png" alt="">
+                            </div>
+                        </article>
+
+                    </div>
+
+                </section>
+             </div>
+              <!-- Правая колонка -->
+        <aside class="trending">
+
+            <h3 class="trending-title">Популярное</h3>
+
+            <div class="trending-list">
+
+                <article class="trending-card">
+                    <span class="trending-number">01</span>
+                    <h4>Самые читаемые статьи недели</h4>
+                </article>
+
+                <article class="trending-card">
+                    <span class="trending-number">02</span>
+                    <h4>Главные новости месяца</h4>
+                </article>
+
+                <article class="trending-card">
+                    <span class="trending-number">03</span>
+                    <h4>Выбор редакции</h4>
+                </article>
+
+            </div>
+
+        </aside>
+    </div>
+
+
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-container container">
+
+        <!-- ВЕРХНЯЯ ЧАСТЬ -->
+        <div class="footer-top">
+
+            <div class="footer-logo">
+               <div class="logo">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#">Рубрика</a>
+                <a href="#">Рубрика</a>
+                <a href="#">Рубрика</a>
+                <a href="#">О нас</a>
+            </nav>
+
+            <div class="footer-socials">
+                <a href="#">VK</a>
+                <a href="#">TG</a>
+                <a href="#">YT</a>
+            </div>
+
+        </div>
+
+        <!-- РАЗДЕЛИТЕЛЬ -->
+        <div class="footer-divider"></div>
+
+        <!-- НИЖНЯЯ ЧАСТЬ -->
+        <div class="footer-bottom">
+
+            <div class="footer-policy">
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+
+            <div class="footer-dev">
+                <span>Разработка: Студия Веб-Пульс и Хома</span>
+            </div>
+
+            <div class="footer-email">
+                <a href="mailto:info@mail.ru">info@mail.ru</a>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+<script>
+const burger = document.getElementById('burger');
+const nav = document.querySelector('.nav');
+const overlay = document.getElementById('overlay');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  nav.classList.toggle('open');
+  overlay.classList.toggle('active');
+});
+
+overlay.addEventListener('click', () => {
+  burger.classList.remove('active');
+  nav.classList.remove('open');
+  overlay.classList.remove('active');
+});
+
+
+</script>
+
+
+
+</body>
+</html>

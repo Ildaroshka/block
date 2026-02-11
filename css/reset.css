@@ -1,0 +1,53 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Убираем списки */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Убираем ссылкам стандартное оформление */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Работа с таблицами */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Убираем стандартные отступы у блока */
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+}
+
+/* Для изображений */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
