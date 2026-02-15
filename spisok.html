@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/about.css" />
-    <title>О нас</title>
+    <link rel="stylesheet" href="./css/spisok.css" />
+    <title>Список статей</title>
 </head>
 <body>
     <header class="header" id="header">
@@ -59,49 +59,56 @@
   </div>
 </header>
 <div class="menu-overlay" id="menuOverlay"></div>
+
 <main class="container">
-<section class="about-hero">
+
+    <section class="category-hero">
   <div class="container">
-    <h1>О нашем IT-блоге</h1>
-    <p>Мы делаем сложные технологии понятными. Пишем про разработку, тренды и реальные кейсы.</p>
+    <h1>Программирование</h1>
+    <p>Все статьи по теме разработки и технологий.</p>
   </div>
 </section>
 
-<section class="about-mission">
-  <div class="container">
-    <div class="mission-card">
-      <h2>Наша миссия</h2>
-      <p>
-        Создать пространство, где разработчики и интересующиеся IT
-        могут получать качественный и полезный контент.
-      </p>
+
+<section class="category-list">
+
+
+    <div class="articles-grid">
+
+      <article class="article-card">
+        <span class="article-date">12 марта 2026</span>
+        <h3>Как работает Virtual DOM?</h3>
+        <p>Разбираем принцип работы Virtual DOM простым языком.</p>
+        <a href="#" class="read-more">Читать →</a>
+      </article>
+
+      <article class="article-card">
+        <span class="article-date">5 марта 2026</span>
+        <h3>Что такое REST API?</h3>
+        <p>Объясняем архитектурный стиль REST на реальных примерах.</p>
+        <a href="#" class="read-more">Читать →</a>
+      </article>
+
+      <article class="article-card">
+        <span class="article-date">1 марта 2026</span>
+        <h3>Основы алгоритмов</h3>
+        <p>Почему алгоритмы важны и как они влияют на производительность.</p>
+        <a href="#" class="read-more">Читать →</a>
+      </article>
+
     </div>
-  </div>
-</section>
 
-<section class="about-features">
-  <div class="container">
-    <div class="features-grid">
-      <div class="feature-card">
-        <h3>Актуальные тренды</h3>
-        <p>Следим за технологиями и публикуем свежие материалы.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Практические статьи</h3>
-        <p>Без воды — только реальные примеры и код.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Понятное объяснение</h3>
-        <p>Сложные темы простым языком.</p>
-      </div>
+    <!-- ПАГИНАЦИЯ -->
+    <div class="pagination">
+      <button class="page-btn">← Назад</button>
+      <button class="page-btn">Вперёд →</button>
     </div>
-  </div>
+
+
 </section>
 
 
-
-
-</main> 
+</main>
 <footer class="footer">
     <div class="footer-container container">
 
