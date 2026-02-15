@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="./css/reset.css" />
 <link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./css/index.css" />
 <title>Главная</title>
 </head>
 <body>
@@ -28,9 +29,9 @@
         </div>
     </div>
     <div class="nav-menu  header-bottom">
-                    <a class="nav-chip">Рубрика</a>
-                    <a class="nav-chip">Рубрика</a>
-                    <a class="nav-chip">Рубрика</a>
+                    <a class="nav-chip" href="./category.html">Рубрика</a>
+                    <a class="nav-chip" href="./category.html">Рубрика</a>
+                    <a class="nav-chip" href="./category.html">Рубрика</a>
                     <a class="nav-chip" href="./about.html">О нас</a>
     </div>
 
@@ -46,9 +47,9 @@
             </div>
 
             <div class="nav-menu">
-                <a class="nav-chip">Рубрика</a>
-                <a class="nav-chip">Рубрика</a>
-                <a class="nav-chip">Рубрика</a>
+                <a class="nav-chip" href="./category.html">Рубрика</a>
+                <a class="nav-chip" href="./category.html">Рубрика</a>
+                <a class="nav-chip" href="./category.html">Рубрика</a>
                 <a class="nav-chip" href="./about.html">О нас</a>
             </div>
         </div>
@@ -60,7 +61,10 @@
 <div class="menu-overlay" id="menuOverlay"></div>
 
 <main class="container">
-    <section class="main-block">
+    <section class="page-content">
+        <div class="layout-grid">
+             <div class="layout-main">
+                <section class="main-block">
 
         <!-- Главная статья -->
         <article class="article-card article-main">
@@ -76,51 +80,9 @@
         </article>
 
         <!-- Новости -->
-        <div class="news-list">
-
-            <article class="news-item">
-                <a href="#">
-                    <div class="news-meta">
-                        <span class="news-category">Новости</span>
-                        <span class="news-date">12.02.2026</span>
-                    </div>
-                    <h2>Новость 1</h2>
-                    <p>Короткое описание новости</p>
-                </a>
-            </article>
-
-
-            <article class="news-item">
-                <a href="#">
-                    <div class="news-meta">
-                        <span class="news-category">Новости</span>
-                        <span class="news-date">12.02.2026</span>
-                    </div>
-                    <h2>Новость 2</h2>
-                    <p>Короткое описание новости</p>
-                </a>
-            </article>
-
-            <article class="news-item">
-                <a href="#">
-                    <div class="news-meta">
-                        <span class="news-category">Новости</span>
-                        <span class="news-date">12.02.2026</span>
-                    </div>
-                    <h2>Новость 3</h2>
-                    <p>Короткое описание новости</p>
-                </a>
-            </article>
-            <a href="#" class="all-news-btn">Все новости →</a>
-
-        </div>
 
 
     </section>
-
-    <section class="page-content container">
-        <div class="layout-grid">
-             <div class="layout-main">
                 <section class="categories">
                     <h2 class="section-title">Рубрики</h2>
 
@@ -212,30 +174,44 @@
                 </section>
              </div>
               <!-- Правая колонка -->
-        <aside class="trending">
+             <div class="news-list">
 
-            <h3 class="trending-title">Популярное</h3>
+            <article class="news-item">
+                <a href="#">
+                    <div class="news-meta">
+                        <span class="news-category">Новости</span>
+                        <span class="news-date">12.02.2026</span>
+                    </div>
+                    <h2>Новость 1</h2>
+                    <p>Короткое описание новости</p>
+                </a>
+            </article>
 
-            <div class="trending-list">
 
-                <article class="trending-card">
-                    <span class="trending-number">01</span>
-                    <h4>Самые читаемые статьи недели</h4>
-                </article>
+            <article class="news-item">
+                <a href="#">
+                    <div class="news-meta">
+                        <span class="news-category">Новости</span>
+                        <span class="news-date">12.02.2026</span>
+                    </div>
+                    <h2>Новость 2</h2>
+                    <p>Короткое описание новости</p>
+                </a>
+            </article>
 
-                <article class="trending-card">
-                    <span class="trending-number">02</span>
-                    <h4>Главные новости месяца</h4>
-                </article>
+            <article class="news-item">
+                <a href="#">
+                    <div class="news-meta">
+                        <span class="news-category">Новости</span>
+                        <span class="news-date">12.02.2026</span>
+                    </div>
+                    <h2>Новость 3</h2>
+                    <p>Короткое описание новости</p>
+                </a>
+            </article>
+            <a href="#" class="all-news-btn">Все новости →</a>
 
-                <article class="trending-card">
-                    <span class="trending-number">03</span>
-                    <h4>Выбор редакции</h4>
-                </article>
-
-            </div>
-
-        </aside>
+        </div>
     </div>
 
 
@@ -266,7 +242,7 @@
             <div class="footer-socials">
                 <a href="#">VK</a>
                 <a href="#">TG</a>
-                <a href="#">YT</a>
+                <a href="#">MAX</a>
             </div>
 
         </div>
@@ -294,25 +270,7 @@
     </div>
 </footer>
 
-<script>
-const burger = document.getElementById('burger');
-const nav = document.querySelector('.nav');
-const overlay = document.getElementById('overlay');
-
-burger.addEventListener('click', () => {
-  burger.classList.toggle('active');
-  nav.classList.toggle('open');
-  overlay.classList.toggle('active');
-});
-
-overlay.addEventListener('click', () => {
-  burger.classList.remove('active');
-  nav.classList.remove('open');
-  overlay.classList.remove('active');
-});
-
-
-</script>
+<script src="./js/script.js"></script>
 
 
 

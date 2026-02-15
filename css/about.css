@@ -1,0 +1,170 @@
+/* ================= ABOUT PAGE ================= */
+
+.about-hero {
+  position: relative;
+  padding: 100px 0 80px;
+  background: linear-gradient(135deg, #f4f7fb 0%, #ffffff 60%);
+  text-align: center;
+  overflow: hidden;
+  border-radius: 0 0 24px 24px;
+}
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(4,113,227,0.15) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.about-hero h1 {
+  position: relative;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, var(--blue), var(--blue-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-hero p {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+}
+
+
+/* ================= MISSION BLOCK ================= */
+
+.about-mission {
+  padding: 70px 0;
+}
+
+.mission-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  padding: 50px;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid rgba(17, 61, 150, 0.1);
+  box-shadow: 0 20px 40px rgba(17, 61, 150, 0.05);
+  transition: 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(17, 61, 150, 0.1);
+}
+
+
+.mission-card h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--blue);
+}
+
+.mission-card p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* ================= FEATURES ================= */
+
+.about-features {
+  padding: 70px 0;
+  background: #f8fbff;
+  border-radius: 24px 24px 0  0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.feature-card {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+  border-radius: 22px;
+  transition: all 0.35s ease;
+  border: 1px solid #eef2f7;
+}
+
+.feature-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  background: linear-gradient(135deg, transparent, rgba(4,113,227,0.05));
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 40px rgba(4,113,227,0.15);
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--blue);
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.7;
+}
+
+
+
+
+
+/* ================= ADAPTIVE ================= */
+
+@media (max-width: 992px) {
+  .features-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero h1 {
+    font-size: 30px;
+  }
+
+  .mission-card {
+    padding: 25px;
+  }
+}
+
+
+section {
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
